@@ -3,5 +3,8 @@ psycopg2-binary
 djangorestframework
 pillow
 django-cors-headers
-django-storages 
-boto3
+pipenv
+django
+djangorestframework-simplejwt
+django-filter
+gunicorn
