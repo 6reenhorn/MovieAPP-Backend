@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'kingdom2504',
-        'HOST': 'localhost',
+        'NAME': 'moviehaven',
+        'USER': 'moviehaven',
+        'PASSWORD': 'MovieHaven_2025',
+        'HOST': 'moviehaven-db.ctgqooyg08de.ap-southeast-2.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
