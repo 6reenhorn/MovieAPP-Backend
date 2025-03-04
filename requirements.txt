@@ -18,3 +18,4 @@ virtualenv==20.29.2
 djangorestframework-simplejwt
 django-filter
 gunicorn
+python-dotenv

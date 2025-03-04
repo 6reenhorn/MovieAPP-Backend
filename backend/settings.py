@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -83,11 +86,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'moviehaven',
-        'USER': 'moviehaven',
-        'PASSWORD': 'MovieHaven_2025',
-        'HOST': 'moviehaven-db.ctgqooyg08de.ap-southeast-2.rds.amazonaws.com',
-        'PORT': '5432',
+        'NAME': os.getenv('DATABASE_NAME', 'moviehaven'),
+        'USER': os.getenv('DATABASE_USER', 'moviehaven'),
+        'PASSWORD': os.getenv('DATABASE_PASSWORD', 'MovieHaven_2025'),
+        'HOST': os.getenv('DATABASE_HOST', 'moviehaven-db.ctgqooyg08de.ap-southeast-2.rds.amazonaws.com'),
+        'PORT': os.getenv('DATABASE_PORT', '5432'),
     }
 }
 
