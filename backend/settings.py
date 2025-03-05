@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-18nz=@1sfq_esot-!fpajxs5a@fk1!!d54_(p4tx1-7kgm$g^2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["54.252.243.166", "*"]
 
@@ -158,3 +158,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",  
 ]
+
+STATIC_ROOT = "/home/ubuntu/MovieAPP-Backend/staticfiles"
+STATIC_URL = "/static/"
+
