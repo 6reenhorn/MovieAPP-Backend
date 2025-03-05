@@ -159,6 +159,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",  
 ]
 
-STATIC_ROOT = "/home/ubuntu/MovieAPP-Backend/staticfiles"
-STATIC_URL = "/static/"
+STATIC_URL = '/static/'
+STATIC_ROOT = '/home/ubuntu/MovieAPP-Backend/static/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/home/ubuntu/MovieAPP-Backend/media/'
 
