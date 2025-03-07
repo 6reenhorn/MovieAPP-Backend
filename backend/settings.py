@@ -129,8 +129,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
@@ -151,8 +149,6 @@ REST_FRAMEWORK = {
     ),
 }
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
@@ -160,7 +156,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home/ubuntu/MovieAPP-Backend/static/'
-MEDIA_URL = '/media/'
-MEDIA_ROOT = '/home/ubuntu/MovieAPP-Backend/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
