@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-18nz=@1sfq_esot-!fpajxs5a@fk1!!d54_(p4tx1-7kgm$g^2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["moviehaven.hopto.org", "3.107.210.45", "localhost"]
+ALLOWED_HOSTS = ["moviehaven.hopto.org", "3.107.210.45", "127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -153,6 +153,8 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "https://movie-haven-rho.vercel.app",
 ]
+
+CSRF_TRUSTED_ORIGINS = ["https://moviehaven.hopto.org"]
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
