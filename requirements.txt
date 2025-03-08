@@ -19,3 +19,4 @@ djangorestframework-simplejwt
 django-filter
 gunicorn
 python-dotenv
+whitenoise
