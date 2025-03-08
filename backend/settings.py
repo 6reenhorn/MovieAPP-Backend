@@ -158,7 +158,9 @@ CORS_ALLOWED_ORIGINS = [
     "https://movie-haven-rho.vercel.app",
 ]
 
-CSRF_TRUSTED_ORIGINS = ["https://moviehaven.hopto.org"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://movie-haven-rho.vercel.app",
+]
 
 STATIC_URL = '/static/'
 
