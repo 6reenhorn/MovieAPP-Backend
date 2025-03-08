@@ -2,12 +2,15 @@
 
 ### Overview
 This is the backend for the Movie App, built using Django and Django REST Framework (DRF). It provides APIs for managing movies and user authentication. An admin panel is also included for CRUD operations.
+- Frontend - Vercel (https://movie-haven-rho.vercel.app)
+- Bacckend - Render (https://movieapp-backend-lr4c.onrender.com)
 
 ### Technologies Used
 - Django – Backend framework
 - Django REST Framework (DRF) – API handling
 - PostgreSQL – Database
-- AWS – Deployment (future requirement)
+- AWS – Deployed (Terminated)
+- Render - Deployed (Current)
 
 ## Setup Instructions
 
@@ -82,9 +85,12 @@ This is the backend for the Movie App, built using Django and Django REST Framew
 | DELETE | /api/bookmarks/remove/{movie_id}/ | Delete bookmarked movie |
 
 
-### Deployment on AWS (Planned)
-- The backend will be deployed using AWS services such as EC2 or Elastic Beanstalk.
-- The database can be hosted on AWS RDS (PostgreSQL).
+### Deployment on AWS (Deployed)
+- The backend will be deployed using AWS services such as EC2 or Elastic Beanstalk (Terminated after use).
+- The database can be hosted on AWS RDS (PostgreSQL) (Terminated after use).
+#### Render for backend (Deployed) | Neon for database (Deployed)
+- The backend was deployed on Render for free of charge.
+- The database was deployed on Neon for free of charge. 
 
 ### Contribution
 1. Fork the repository
