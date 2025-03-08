@@ -86,10 +86,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DATABASE_NAME', 'moviehaven'),
-        'USER': os.getenv('DATABASE_USER', 'moviehaven'),
+        'NAME': os.getenv('DATABASE_NAME', 'neondb'),
+        'USER': os.getenv('DATABASE_USER', 'neondb_owner'),
         'PASSWORD': os.getenv('DATABASE_PASSWORD', 'MovieHaven_2025'),
-        'HOST': os.getenv('DATABASE_HOST', 'moviehaven-db.ctgqooyg08de.ap-southeast-2.rds.amazonaws.com'),
+        'HOST': os.getenv('DATABASE_HOST', 'ep-silent-flower-a7e520qu-pooler.ap-southeast-2.aws.neon.tech'),
         'PORT': os.getenv('DATABASE_PORT', '5432'),
     }
 }
@@ -161,3 +161,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+CSRF_COOKIE_SECURE = True 
+SESSION_COOKIE_SECURE = True  
+SECURE_SSL_REDIRECT = True 
+SECURE_HSTS_SECONDS = 31536000  
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
