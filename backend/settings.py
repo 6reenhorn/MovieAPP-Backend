@@ -86,11 +86,14 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DATABASE_NAME', 'neondb'),
-        'USER': os.getenv('DATABASE_USER', 'neondb_owner'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD', 'MovieHaven_2025'),
-        'HOST': os.getenv('DATABASE_HOST', 'ep-silent-flower-a7e520qu-pooler.ap-southeast-2.aws.neon.tech'),
-        'PORT': os.getenv('DATABASE_PORT', '5432'),
+        'NAME': 'neondb',
+        'USER': 'neondb_owner',
+        'PASSWORD': 'npg_jeTO8Pgh9svN',
+        'HOST': 'ep-silent-flower-a7e520qu-pooler.ap-southeast-2.aws.neon.tech',
+        'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
     }
 }
 
