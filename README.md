@@ -3,7 +3,7 @@
 ### Overview
 This is the backend for the Movie App, built using Django and Django REST Framework (DRF). It provides APIs for managing movies and user authentication. An admin panel is also included for CRUD operations.
 - Frontend - Vercel (https://movie-haven-rho.vercel.app)
-- Bacckend - Render (https://movieapp-backend-lr4c.onrender.com)
+- Backend - Render (https://movieapp-backend-lr4c.onrender.com)
 
 ### Technologies Used
 - Django – Backend framework
